@@ -7,7 +7,8 @@ class App < Sinatra::Base
   end
   
   get '/name' do
-    "My name is "
+    name = params[:name]
+    "My name is #{name}"
   end
   
   get '/hometown' do
@@ -15,7 +16,7 @@ class App < Sinatra::Base
   end
   
   get '/favorite-song' do
-    "My favorite song is"
+    "My favorite song is "
   end
   
 end
