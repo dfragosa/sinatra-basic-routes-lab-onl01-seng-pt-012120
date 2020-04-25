@@ -17,8 +17,8 @@ class App < Sinatra::Base
   end
   
   get '/favorite-song' do
-    favorite-song = params[:favorite-song]
-    "My favorite song is #{favorite-song}"
+    song = params[:song]
+    "My favorite song is #{song}"
   end
   
 end
